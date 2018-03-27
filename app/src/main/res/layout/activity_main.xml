@@ -6,32 +6,118 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <include layout="@layout/toolbar"/>
+        <FrameLayout
+            android:id="@+id/fragments"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            >
 
-    <Button
-        android:id="@+id/button0"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"
-        android:text="普通写法(Retrofit)"/>
+            <LinearLayout
+                android:id="@+id/home_fragment_fire"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:tag="0"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"
-        android:text="普通写法(Retrofit+Rxjava)"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/home_tab_icon_fire"
+                    />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/home_tab_textstyle"
+                    android:textSize="13sp"
+                    android:text="火警"/>
 
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
+            <LinearLayout
+                android:id="@+id/home_fragment_incident"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:tag="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp">
 
-</LinearLayout>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/home_tab_icon_incident"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/home_tab_textstyle"
+                    android:textSize="13sp"
+                    android:text="事件"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_fragment_manager"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:tag="2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/home_tab_icon_manager"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/home_tab_textstyle"
+                    android:textSize="13sp"
+                    android:text="管理"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_fragment_mine"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:tag="3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/home_tab_icon_me"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/home_tab_textstyle"
+                    android:textSize="13sp"
+                    android:text="我的"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+

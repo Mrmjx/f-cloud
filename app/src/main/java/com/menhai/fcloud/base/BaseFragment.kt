@@ -2,7 +2,7 @@ package com.menhai.fcloud.base
 
 import android.app.Activity
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import android.app.Fragment
 import android.support.v7.widget.Toolbar
 import android.view.View
 import android.widget.TextView
@@ -16,7 +16,7 @@ import rx.subscriptions.CompositeSubscription
  * Created by mjx on 2018/3/26.
  */
 
-class BaseFragment : Fragment() {
+open class BaseFragment : Fragment() {
     var mActivity: Activity ?= null
 
     private var mCompositeSubscription: CompositeSubscription? = null

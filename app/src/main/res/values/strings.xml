@@ -1,8 +1,5 @@
 <resources>
-    <string name="app_name">RetrofitRxjavaDemo</string>
+    <string name="app_name">FCloud</string>
+    <string name="title_activity_modify_head_icon">修改头像</string>
 
-    <string name="city">城市:</string>
-    <string name="wd">\n风向:</string>
-    <string name="ws">\n风级:</string>
-    <string name="time">\n发布时间:</string>
 </resources>

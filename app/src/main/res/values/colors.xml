@@ -7,4 +7,10 @@
 
     <color name="home_tab_text_color_def">#1b82d1</color>
     <color name="home_tab_text_color_sel">#999999</color>
+    <color name="common_tran">#00000000</color>
+    <color name="common_while">#ffffff</color>
+    <color name="common_color_e5e5e5">#e5e5e5</color>
+    <color name="common_color_666666">#666666</color>
+    <color name="common_color_00a0eb">#00a0eb</color>
+    <color name="common_color_f2f2f2">#f2f2f2</color>
 </resources>
